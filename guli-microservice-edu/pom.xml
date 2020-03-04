@@ -54,5 +54,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>top.sunpx</groupId>
+            <artifactId>sunpx-framework-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 </project>
