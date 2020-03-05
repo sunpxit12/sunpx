@@ -16,11 +16,11 @@ import top.sunpx.common.result.ResultData;
 public class GlobalException {
 
     /**
-     * @author      : sunpx
-     * @desc        : 处理全局异常
-     * @date        : top.sunpx.common.result.ResultData 17:02:07
-     * @params      : e
-     * @return      : top.sunpx.common.result.ResultData
+     * @return : top.sunpx.common.result.ResultData
+     * @author : sunpx
+     * @desc : 处理全局异常
+     * @date : top.sunpx.common.result.ResultData 17:02:07
+     * @params : e
      */
     @ExceptionHandler(Exception.class)
     @ResponseBody
@@ -31,16 +31,16 @@ public class GlobalException {
 
 
     /**
-     * @author      : sunpx
-     * @desc        : 处理自定义异常
-     * @date        :  17:05:44
-     * @params      : null
-     * @return      :
+     * @return :
+     * @author : sunpx
+     * @desc : 处理自定义异常
+     * @date :  17:05:44
+     * @params : null
      */
     @ExceptionHandler(GuliException.class)
     @ResponseBody
-    public ResultData error(GuliException e){
+    public ResultData error(GuliException e) {
         log.error(e.getMessage());
-        return ResultData.getError(e.getCode(),e.getMessage());
+        return ResultData.getError(e.getCode(), e.getMessage());
     }
 }
